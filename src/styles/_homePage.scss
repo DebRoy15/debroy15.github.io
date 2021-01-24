@@ -169,3 +169,25 @@
     transform: translateZ(60px);
   }
 }
+
+.skills-section {
+  background-color: rgba(78, 41, 144, 1);
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    color: white;
+  }
+}
