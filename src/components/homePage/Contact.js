@@ -14,14 +14,14 @@ const Contact = () => {
       <div className="container pt-5 pb-5 ">
         <Row className="justify-content-between">
           <Col md={4}>
-            <h1>Web Developer</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-              veniam corporis debitis repudiandae, voluptas nulla recusandae
-              aliquam omnis expedita est. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Aut veniam corporis debitis
-              repudiandae, voluptas nulla recusandae aliquam omnis expedita est.
+            <h1>Contact Me</h1>
+            <p className="mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              ducimus excepturi quam temporibus, laboriosam sit magnam nihil?
+              Hic, maxime. Voluptatem.
             </p>
+            <h4 className="mb-4">phoneNo- +91 7001806883</h4>
+            <h4 className="mb-4">email - debroy1597@gmail.com</h4>
           </Col>
           <Col md={7}>
             <from autoComplete="off">

@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
@@ -63,13 +64,16 @@ const Projects = () => {
                     scale={1.02}
                   >
                     <div className="inner-element">
-                      <h4>Amazon Clone</h4>
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Nulla molestias rem illo architecto a sequi
-                        delectus quis velit culpa corporis.
-                      </p>
-                      <div>👀</div>
+                      <h4>{project.title}</h4>
+                      <p>{project.description}</p>
+                      <div className="d-flex justify-content-between mr-4">
+                        <Button color="white" variant="outlined">
+                          Source Code
+                        </Button>
+                        <Button color="white" variant="outlined">
+                          Live Demo
+                        </Button>
+                      </div>
                     </div>
                   </Tilt>
                 </Col>
