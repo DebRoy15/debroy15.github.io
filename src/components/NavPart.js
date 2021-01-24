@@ -9,43 +9,42 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const NavPart = () => {
   return (
     <div className="fixed ">
-      <div className="container pl-1">
-        <Navbar className="nav p-0">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="mr-auto nav-left-side">
-            <Nav.Link href="#home" className="nav-item">
-              Home
-            </Nav.Link>
-            <Nav.Link href="#features" className="nav-item">
-              About
-            </Nav.Link>
-            <Nav.Link href="#pricing" className="nav-item">
-              Service
-            </Nav.Link>
-            <Nav.Link href="#home" className="nav-item">
-              Portfolio
-            </Nav.Link>
-            <Nav.Link href="#features" className="nav-item">
-              Blog
-            </Nav.Link>
-            <Nav.Link href="#pricing" className="nav-item">
-              Contact
-            </Nav.Link>
-          </Nav>
-          <Nav className="ml-auto nav-right-side">
-            <Nav.Link href="#home" className="nav-item mr-4">
-              <GitHubIcon />
-            </Nav.Link>
-            <Nav.Link href="#features" className="nav-item mr-4">
-              <LinkedInIcon />
-            </Nav.Link>
-            <Nav.Link href="#pricing" className="nav-item mr-4">
-              <InstagramIcon />
-            </Nav.Link>
-            <Nav.Link href="#pricing" className="nav-item mr-4">
-              <TwitterIcon />
-            </Nav.Link>
-          </Nav>
+      <div className="container">
+        <Navbar collapseOnSelect expand="lg">
+          <Navbar.Brand href="#home" className="logo">
+            DR
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto nav-left-side">
+              <Nav.Link href="#home" className="nav-item">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#features" className="nav-item">
+                About
+              </Nav.Link>
+              <Nav.Link href="#projects" className="nav-item">
+                Projects
+              </Nav.Link>
+              <Nav.Link href="#home" className="nav-item">
+                Portfolio
+              </Nav.Link>
+              <Nav.Link href="#features" className="nav-item">
+                Blog
+              </Nav.Link>
+              <Nav.Link href="#contact" className="nav-item">
+                Contact
+              </Nav.Link>
+            </Nav>
+            <Nav className="ml-auto w-25">
+              <div className="d-flex justify-content-between w-100 nav-item">
+                <GitHubIcon />
+                <LinkedInIcon />
+                <InstagramIcon />
+                <TwitterIcon />
+              </div>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </div>
     </div>

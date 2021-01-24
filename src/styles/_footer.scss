@@ -1,13 +1,15 @@
 .footer {
   background-image: url("../images/footer-bg.png");
-  background-color: rgba(46, 45, 79, 1);
+
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  width: 100% !important;
 }
 
 .footer-info {
   color: white;
+  list-style: none;
   li {
     font-size: 1.5rem;
   }

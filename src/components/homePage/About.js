@@ -6,15 +6,11 @@ import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 const About = () => {
   const [tab, setTab] = useState("experience");
   return (
-    <div id="features" className="about">
+    <div id="features" className="about pb-5">
       <div className="container">
         <Row>
           <Col className="" md={5}>
-            <img
-              className="about-img"
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
+            <img className="about-img" src="/images/pro-pic.jpg" alt="" />
           </Col>
           <Col className="" md={7}>
             <div className="about-info">

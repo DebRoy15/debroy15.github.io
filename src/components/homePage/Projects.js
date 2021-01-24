@@ -1,37 +1,38 @@
 import React from "react";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import Tilt from "react-parallax-tilt";
 
 const myProjects = [
   {
-    image: "",
+    image: "/images/project-2.png",
     title: "name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
-    image: "",
+    image: "/images/project-bg.jpg",
     title: "name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
-    image: "",
+    image: "/images/project-3.png",
     title: "name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
-    image: "",
+    image: "/images/project-4.png",
     title: "name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
-    image: "",
+    image: "/images/project-3.png",
     title: "name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
@@ -41,7 +42,7 @@ const myProjects = [
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="container pb-5">
         <div className="heading-section">
           <h1>My Projects</h1>
@@ -50,18 +51,27 @@ const Projects = () => {
           <Row className="justify-content-center">
             {myProjects.map((project) => {
               return (
-                <Col md={4} className="mb-4">
-                  <Card>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUuX7jpNbDfQz4wyyq6iuM9B8PLibtbdCjA&usqp=CAU"
-                    />
-                    <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>Some quick example</Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                  </Card>
+                <Col md={4} className="mb-5">
+                  <Tilt
+                    className="parallax-effect-glare-scale"
+                    style={{
+                      backgroundImage: `url(${project.image})`,
+                    }}
+                    perspective={500}
+                    glareEnable={true}
+                    glareMaxOpacity={0.45}
+                    scale={1.02}
+                  >
+                    <div className="inner-element">
+                      <h4>Amazon Clone</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Nulla molestias rem illo architecto a sequi
+                        delectus quis velit culpa corporis.
+                      </p>
+                      <div>👀</div>
+                    </div>
+                  </Tilt>
                 </Col>
               );
             })}

@@ -1,4 +1,5 @@
 // ----------------------------------------------------------------
+
 .fix {
   overflow: hidden;
 }
@@ -19,12 +20,26 @@
 
 .intro-section {
   color: white;
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
 }
 
 // -----------------------------------
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
+
   display: flex;
   align-items: center;
   background: rgb(46, 45, 79);
@@ -36,6 +51,7 @@
 }
 .about-img {
   height: 80vh;
+  object-fit: cover;
 }
 
 .about-info {
@@ -125,5 +141,31 @@
   span {
     font-weight: bold !important;
     font-size: 1.2rem;
+  }
+}
+
+.parallax-effect-glare-scale {
+  // background-image: url("../images/home-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  color: white;
+  border-radius: 20px;
+
+  transform-style: preserve-3d;
+
+  .inner-element {
+    margin-left: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    font-style: italic;
+    color: white;
+    transform: translateZ(60px);
   }
 }

@@ -10,7 +10,7 @@ import { Col, Row } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div className="contact-section-bg">
+    <div className="contact-section-bg" id="contact">
       <div className="container pt-5 pb-5 ">
         <Row className="justify-content-between">
           <Col md={4}>
