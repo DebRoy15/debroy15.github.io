@@ -1,6 +1,10 @@
 import React from "react";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
-import "../styles/_nav.sass";
+import "../styles/_nav.scss";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const NavPart = () => {
   return (
@@ -29,14 +33,17 @@ const NavPart = () => {
             </Nav.Link>
           </Nav>
           <Nav className="ml-auto nav-right-side">
-            <Nav.Link href="#home" className="nav-item">
-              github
+            <Nav.Link href="#home" className="nav-item mr-4">
+              <GitHubIcon />
             </Nav.Link>
-            <Nav.Link href="#features" className="nav-item">
-              in
+            <Nav.Link href="#features" className="nav-item mr-4">
+              <LinkedInIcon />
             </Nav.Link>
-            <Nav.Link href="#pricing" className="nav-item">
-              insta
+            <Nav.Link href="#pricing" className="nav-item mr-4">
+              <InstagramIcon />
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="nav-item mr-4">
+              <TwitterIcon />
             </Nav.Link>
           </Nav>
         </Navbar>

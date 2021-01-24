@@ -1,0 +1,18 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: rgba(46, 45, 79, 1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.nav-item {
+  color: white !important;
+}

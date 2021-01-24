@@ -1,0 +1,129 @@
+// ----------------------------------------------------------------
+.fix {
+  overflow: hidden;
+}
+
+.bg-image {
+  background-image: url("../images/home-bg.jpg");
+  // background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.home-row {
+  height: 100vh;
+  align-items: center;
+}
+
+.intro-section {
+  color: white;
+}
+
+// -----------------------------------
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(46, 45, 79);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 45, 79, 1) 35%,
+    rgba(78, 41, 144, 1) 100%
+  );
+}
+.about-img {
+  height: 80vh;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+.active-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 12, 17, 0.8);
+  width: 16rem;
+  padding: 0.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  h4 {
+    margin-left: 1rem;
+  }
+}
+.inactive-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(12, 12, 17);
+  width: 16rem;
+  padding: 0.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  h4 {
+    margin-left: 1rem;
+  }
+}
+.about-sub-data {
+  padding: 1rem;
+  box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
+}
+
+// -------------------------------------------------
+
+.projects {
+  background: rgb(46, 45, 79);
+  background: linear-gradient(
+    0deg,
+    rgba(46, 45, 79, 1) 35%,
+    rgba(78, 41, 144, 1) 100%
+  );
+}
+
+.heading-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.contact-section-bg {
+  background-image: url("../images/map.png");
+  background-color: rgba(46, 45, 79, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.form-textfield-input {
+  color: white !important;
+}
+.form-textfield {
+  border-color: aliceblue !important;
+}
+.send-message-btn {
+  padding: 15px 30px !important;
+  span {
+    font-weight: bold !important;
+    font-size: 1.2rem;
+  }
+}
