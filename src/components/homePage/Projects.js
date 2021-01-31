@@ -1,7 +1,6 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import Tilt from "react-parallax-tilt";
 
 const myProjects = [
   {
