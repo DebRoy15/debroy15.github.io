@@ -15,7 +15,9 @@ const About = () => {
           <Col className="" md={7}>
             <div className="about-info">
               <div className="about-info-des">
-                <h1>About Me</h1>
+                <h1>
+                  <span className="chonburi-font green-text">Abou</span>t Me
+                </h1>
                 <p className="">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
@@ -28,21 +30,27 @@ const About = () => {
                 <div className="tabs mb-5">
                   <div
                     className={`
-                      ${tab === "experience" ? "active-tab" : "inactive-tab"}`}
+                      ${
+                        tab === "experience"
+                          ? "active-tab mr-3"
+                          : "inactive-tab"
+                      }`}
                     onClick={() => setTab("experience")}
                   >
                     <WorkIcon />
-                    <h4>Experiences</h4>
+                    <h5>Experiences</h5>
                   </div>
                   <div
                     className={`
-                      ${tab === "education" ? "active-tab" : "inactive-tab"}`}
+                      ${
+                        tab === "education" ? "active-tab ml-3" : "inactive-tab"
+                      }`}
                     onClick={() => setTab("education")}
                   >
                     <LocalLibraryIcon />
-                    <h4>
+                    <h5>
                       Education &<br /> Certification
-                    </h4>
+                    </h5>
                   </div>
                 </div>
                 <div className="about-sub-data">

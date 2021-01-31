@@ -57,7 +57,9 @@ const Skills = () => {
     <div id="skills" className="skills-section">
       <div className="container">
         <div className="heading-section">
-          <h1>Skills</h1>
+          <h1>
+            <span className="chonburi-font green-text">Skil</span>ls
+          </h1>
         </div>
         <Row>
           {skills.map((skill) => {
@@ -65,7 +67,7 @@ const Skills = () => {
               <Col>
                 <div className="skills">
                   <img src={skill.logo} alt="" />
-                  <h4>{skill.name}</h4>
+                  <h6>{skill.name}</h6>
                 </div>
               </Col>
             );

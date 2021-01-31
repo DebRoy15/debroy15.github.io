@@ -36,7 +36,7 @@ const Footer = () => {
             <span className="footer-love-icon">
               <FavoriteIcon />
             </span>{" "}
-            by DebRoy
+            by <span className="chonburi-font green-text"> Deb Roy</span>
           </p>
         </div>
       </div>

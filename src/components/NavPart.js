@@ -11,7 +11,7 @@ const NavPart = () => {
     <div className="fixed ">
       <div className="container">
         <Navbar collapseOnSelect expand="lg">
-          <Navbar.Brand href="#home" className="logo">
+          <Navbar.Brand href="/" className="logo">
             DR
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

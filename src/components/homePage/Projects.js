@@ -6,35 +6,35 @@ import Tilt from "react-parallax-tilt";
 const myProjects = [
   {
     image: "/images/project-2.png",
-    title: "name",
+    title: "Amazon Clone",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
-    image: "/images/project-bg.jpg",
-    title: "name",
+    image: "/images/project-5.png",
+    title: "Sportily Clone",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
     image: "/images/project-3.png",
-    title: "name",
+    title: "Photographer Eye",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
     image: "/images/project-4.png",
-    title: "name",
+    title: "Headphone Page",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
   },
   {
     image: "/images/project-3.png",
-    title: "name",
+    title: "Project Name",
     description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     liveLink: "",
     demoLink: "",
@@ -46,7 +46,9 @@ const Projects = () => {
     <div className="projects" id="projects">
       <div className="container pb-5">
         <div className="heading-section">
-          <h1>My Projects</h1>
+          <h1>
+            <span className="chonburi-font green-text">My Pr</span>ojects
+          </h1>
         </div>
         <div className="projects-cards">
           <Row className="justify-content-center">
@@ -81,11 +83,17 @@ const Projects = () => {
                       <img src={project.image} alt="" />
                     </div>
                     <div className="project-info">
-                      <h4>{project.title}</h4>
-                      <p>{project.description}</p>
+                      <h4 className="color-white font-weight-bold">
+                        {project.title}
+                      </h4>
+                      <p className="color-white">{project.description}</p>
                       <div className="d-flex justify-content-between mr-4">
-                        <Button variant="outlined">Source Code</Button>
-                        <Button variant="outlined">Live Demo</Button>
+                        <Button variant="contained" color="secondary">
+                          Source Code
+                        </Button>
+                        <Button variant="contained" color="secondary">
+                          Live Demo
+                        </Button>
                       </div>
                     </div>
                   </div>

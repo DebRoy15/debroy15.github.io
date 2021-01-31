@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;600;700&family=Overpass:wght@100;300;400;600;700;900&display=swap");
+/* normal */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;700&display=swap");
+
+/* bold */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 @import "./styles/reset.css";
 /* @import "../ReactParallaxTilt.scss"; */
 /* ==================================== */
 
-body {
-  font-family: "Overpass", cursive !important;
+* {
+  font-family: "IBM Plex Serif", serif !important;
+  letter-spacing: 0.5px;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -43,5 +48,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Catamaran" !important;
+  font-family: "Abril Fatface", cursive !important;
+  letter-spacing: 2px;
+}
+
+.chonburi-font {
+  font-family: "Abril Fatface", cursive !important;
+  letter-spacing: 2px;
 }

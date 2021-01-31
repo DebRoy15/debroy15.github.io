@@ -75,10 +75,9 @@
   width: 14rem;
   height: 4rem;
   padding: 0.5rem;
-  margin-right: 2rem;
   border-radius: 10rem;
   cursor: pointer;
-  h4 {
+  h5 {
     margin: 0 !important;
     margin-left: 1rem !important;
   }
@@ -93,7 +92,7 @@
   padding: 0.5rem;
   border-radius: 10rem;
   cursor: pointer;
-  h4 {
+  h5 {
     margin: 0 !important;
     margin-left: 1rem !important;
   }
@@ -198,11 +197,15 @@
   align-items: center;
 
   img {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin-bottom: 1rem;
   }
-  h4 {
+  h6 {
     color: white;
   }
+}
+
+.color-white {
+  color: white;
 }
