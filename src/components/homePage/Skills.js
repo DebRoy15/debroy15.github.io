@@ -58,7 +58,7 @@ const Skills = () => {
       <div className="container">
         <div className="heading-section">
           <h1>
-            <span className="chonburi-font green-text">Skil</span>ls
+            <span className="chonburi-font green-text">Ski</span>lls
           </h1>
         </div>
         <Row>

@@ -15,7 +15,7 @@ const Contact = () => {
         <Row className="justify-content-between">
           <Col md={4}>
             <h1>
-              <span className="chonburi-font green-text">Cont</span>act Me
+              <span className="chonburi-font green-text">Con</span>tact Me
             </h1>
             <p className="mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab

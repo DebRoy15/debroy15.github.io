@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import WorkIcon from "@material-ui/icons/Work";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
+import SkillSvg from "../../images/about-shape.svg";
 
 const About = () => {
   const [tab, setTab] = useState("experience");
   return (
     <div id="features" className="about pb-5">
+      <img className="skills-img" src={SkillSvg} alt="" />
+
       <div className="container">
         <Row>
           <Col className="" md={5}>
@@ -16,14 +19,14 @@ const About = () => {
             <div className="about-info">
               <div className="about-info-des">
                 <h1>
-                  <span className="chonburi-font green-text">Abou</span>t Me
+                  <span className="chonburi-font green-text">Abo</span>ut Me
                 </h1>
                 <p className="">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which dont look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum,
+                  Current Software Developer at start‑up company Turtleye tech.
+                  1+ years experience in the backend and frontend development
+                  and computersecurity. Interested in devising a better
+                  problem‑solving method for challenging tasks, and learning new
+                  technologies and tools if the need arises.
                 </p>
               </div>
               <div className="mt-5">
@@ -57,30 +60,42 @@ const About = () => {
                   {tab === "experience" ? (
                     <div className="work-experiences">
                       <h5>Turtleye tech</h5>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quos dolor magni quo iusto quis aperiam, at
-                        cupiditate expedita iure. Odit blanditiis nobis quam
-                        delectus inventore sed distinctio alias modi adipisci.
-                      </p>
+                      <ul>
+                        <li>
+                          Developed Front‑end of a website on React for car
+                          share and rental booking application.
+                        </li>
+                        <li>
+                          implemented secure authentication in the website.
+                        </li>
+                        <li>
+                          Implemented Google auto complete and Maps for search
+                          car and rental in the website.
+                        </li>
+                      </ul>
                     </div>
                   ) : null}
                   {tab === "education" ? (
                     <div className="education">
                       <div>
-                        <h5>BootCamp</h5>
-                        <p>
-                          Completed in <strong>Full stack Program</strong> in{" "}
-                          <strong>Java, html, css</strong>
-                        </p>
+                        <h5>Kodnest</h5>
+                        <ul>
+                          <li className="text-justify">
+                            Completed (JAVA, J2EE, JDBC, Servlet, JSP, SQL,
+                            Hibernate, Spring, HTML5, CSS, and JavaScript.)
+                            Training from Kodnest, BTM Bangalore.
+                          </li>
+                        </ul>
                       </div>
                       <div>
-                        <h5>BTech</h5>
-                        <p>
-                          graduated in{" "}
-                          <strong>Electronics Communication Engineering</strong>{" "}
-                          in <strong>2019</strong>
-                        </p>
+                        <h5>B.tech</h5>
+                        <ul>
+                          <li className="text-justify">
+                            graduated in electronics and communication
+                            engineering from Bengal College of Engineering and
+                            Technology in 2019.
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   ) : null}

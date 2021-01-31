@@ -16,7 +16,7 @@ const Home = () => {
                 </h1>
                 <h2>
                   <span className="chonburi-font green-text">Software</span>{" "}
-                  Engineer
+                  Developer
                 </h2>
                 <h3>Based in India</h3>
               </div>

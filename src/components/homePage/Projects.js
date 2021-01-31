@@ -47,7 +47,7 @@ const Projects = () => {
       <div className="container pb-5">
         <div className="heading-section">
           <h1>
-            <span className="chonburi-font green-text">My Pr</span>ojects
+            <span className="chonburi-font green-text">Pro</span>jects
           </h1>
         </div>
         <div className="projects-cards">
@@ -83,9 +83,9 @@ const Projects = () => {
                       <img src={project.image} alt="" />
                     </div>
                     <div className="project-info">
-                      <h4 className="color-white font-weight-bold">
+                      <h5 className="color-white font-weight-bold">
                         {project.title}
-                      </h4>
+                      </h5>
                       <p className="color-white">{project.description}</p>
                       <div className="d-flex justify-content-between mr-4">
                         <Button variant="contained" color="secondary">
