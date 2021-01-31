@@ -4,14 +4,8 @@
 /* @import "../ReactParallaxTilt.scss"; */
 /* ==================================== */
 
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1300px !important;
-  }
+body {
+  font-family: "Overpass", cursive !important;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -24,7 +18,7 @@
 }
 
 .nav-item {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .MuiButton-root {
   color: white !important;
@@ -37,4 +31,17 @@
 }
 .MuiButton-outlined {
   border: 1px solid rgba(255, 255, 255, 1) !important;
+}
+
+.green-text {
+  color: #09c75f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Catamaran" !important;
 }

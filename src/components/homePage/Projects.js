@@ -53,7 +53,7 @@ const Projects = () => {
             {myProjects.map((project) => {
               return (
                 <Col md={4} className="mb-5">
-                  <Tilt
+                  {/* <Tilt
                     className="parallax-effect-glare-scale"
                     style={{
                       backgroundImage: `url(${project.image})`,
@@ -75,7 +75,20 @@ const Projects = () => {
                         </Button>
                       </div>
                     </div>
-                  </Tilt>
+                  </Tilt> */}
+                  <div className="project-card">
+                    <div className="img-section">
+                      <img src={project.image} alt="" />
+                    </div>
+                    <div className="project-info">
+                      <h4>{project.title}</h4>
+                      <p>{project.description}</p>
+                      <div className="d-flex justify-content-between mr-4">
+                        <Button variant="outlined">Source Code</Button>
+                        <Button variant="outlined">Live Demo</Button>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
               );
             })}

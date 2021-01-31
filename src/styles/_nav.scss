@@ -3,20 +3,22 @@
   top: 0;
   width: 100vw;
   z-index: 100;
-  background-color: rgba(46, 45, 79, 1);
+  background-color: #0b0d0e;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: aquamarine !important;
+  color: #09c75f !important;
 }
 .nav {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
 }
 
 .nav-item {
   color: white !important;
+  letter-spacing: 3px;
+  margin-right: 1rem;
 }

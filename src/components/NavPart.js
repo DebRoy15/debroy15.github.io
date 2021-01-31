@@ -23,15 +23,14 @@ const NavPart = () => {
               <Nav.Link href="#features" className="nav-item">
                 About
               </Nav.Link>
+
+              <Nav.Link href="#skills" className="nav-item">
+                Skills
+              </Nav.Link>
               <Nav.Link href="#projects" className="nav-item">
                 Projects
               </Nav.Link>
-              <Nav.Link href="#home" className="nav-item">
-                Portfolio
-              </Nav.Link>
-              <Nav.Link href="#features" className="nav-item">
-                Blog
-              </Nav.Link>
+
               <Nav.Link href="#contact" className="nav-item">
                 Contact
               </Nav.Link>

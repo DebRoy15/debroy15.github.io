@@ -10,8 +10,12 @@ const Home = () => {
             <Col md={6}>
               <div className="intro-section">
                 <h5>Welcome to my world</h5>
-                <h1>Hi, I'm Deb Roy</h1>
-                <h2>Software Engineer</h2>
+                <h1>
+                  Hi, I'm <span className="green-text">Deb</span> Roy
+                </h1>
+                <h2>
+                  <span className="green-text">Software</span> Engineer
+                </h2>
                 <h3>Based in India</h3>
               </div>
             </Col>

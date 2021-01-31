@@ -5,6 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const Footer = () => {
   return (
@@ -19,15 +20,25 @@ const Footer = () => {
               <GitHubIcon />
             </div>
           </Col>
-          <Col md={7} xs={12}>
+          <Col md={5} xs={12}>
             <ul className="d-flex justify-content-between p-0 w-100 footer-info mt-4 ">
               <li className="p-1">Home</li>
               <li className="p-1">About</li>
-              <li className="p-1">Service</li>
-              <li className="p-1">Portfolio</li>
+              <li className="p-1">Skills</li>
+              <li className="p-1">Projects</li>
+              <li className="p-1">Contact</li>
             </ul>
           </Col>
         </Row>
+        <div className="text-center mt-4  footer-end">
+          <p>
+            Developed with{" "}
+            <span className="footer-love-icon">
+              <FavoriteIcon />
+            </span>{" "}
+            by DebRoy
+          </p>
+        </div>
       </div>
     </div>
   );
