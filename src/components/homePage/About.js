@@ -7,7 +7,7 @@ import SkillSvg from "../../images/about-shape.svg";
 const About = () => {
   const [tab, setTab] = useState("experience");
   return (
-    <div id="features" className="about pb-5">
+    <div id="about" className="about pb-5">
       <img className="skills-img" src={SkillSvg} alt="" />
 
       <div className="container">

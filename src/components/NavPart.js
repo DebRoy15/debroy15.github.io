@@ -20,7 +20,7 @@ const NavPart = () => {
               <Nav.Link href="#home" className="nav-item">
                 Home
               </Nav.Link>
-              <Nav.Link href="#features" className="nav-item">
+              <Nav.Link href="#about" className="nav-item">
                 About
               </Nav.Link>
 
@@ -37,8 +37,8 @@ const NavPart = () => {
             </Nav>
             <Nav className="ml-auto w-25">
               <div className="d-flex justify-content-between w-100 nav-item">
-                <GitHubIcon />
                 <LinkedInIcon />
+                <GitHubIcon />
                 <InstagramIcon />
                 <TwitterIcon />
               </div>

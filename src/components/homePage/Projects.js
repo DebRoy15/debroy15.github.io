@@ -43,7 +43,7 @@ const myProjects = [
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      <div className="container pb-5">
+      <div className="container pt-5 pb-5">
         <div className="heading-section">
           <h1>
             <span className="chonburi-font green-text">Pro</span>jects
@@ -54,32 +54,10 @@ const Projects = () => {
             {myProjects.map((project) => {
               return (
                 <Col md={4} className="mb-5">
-                  {/* <Tilt
-                    className="parallax-effect-glare-scale"
-                    style={{
-                      backgroundImage: `url(${project.image})`,
-                    }}
-                    perspective={500}
-                    glareEnable={true}
-                    glareMaxOpacity={0.45}
-                    scale={1.02}
-                  >
-                    <div className="inner-element">
-                      <h4>{project.title}</h4>
-                      <p>{project.description}</p>
-                      <div className="d-flex justify-content-between mr-4">
-                        <Button color="white" variant="outlined">
-                          Source Code
-                        </Button>
-                        <Button color="white" variant="outlined">
-                          Live Demo
-                        </Button>
-                      </div>
-                    </div>
-                  </Tilt> */}
                   <div className="project-card">
                     <div className="img-section">
                       <img src={project.image} alt="" />
+                      <div className="imageCardEffect"></div>
                     </div>
                     <div className="project-info">
                       <h5 className="color-white font-weight-bold">

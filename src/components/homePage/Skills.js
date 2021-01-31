@@ -46,10 +46,10 @@ const skills = [
     logo: "/images/skills/sass.png",
     name: "Sass",
   },
-  {
-    logo: "/images/skills/postman.png",
-    name: "Postman",
-  },
+  // {
+  //   logo: "/images/skills/postman.png",
+  //   name: "Postman",
+  // },
 ];
 
 const Skills = () => {

@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 img {
-  object-fit: cover !important;
+  object-fit: contain !important;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -31,6 +31,7 @@ img {
 .nav-item {
   font-size: 1rem;
 }
+
 .MuiButton-root {
   color: white !important;
 }

@@ -21,4 +21,8 @@
   color: white !important;
   letter-spacing: 3px;
   margin-right: 1rem;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    color: #09c75f !important;
+  }
 }
