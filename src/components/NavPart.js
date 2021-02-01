@@ -36,11 +36,19 @@ const NavPart = () => {
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto w-25">
-              <div className="d-flex justify-content-between w-100 nav-item">
-                <LinkedInIcon />
-                <GitHubIcon />
-                <InstagramIcon />
-                <TwitterIcon />
+              <div className="d-flex justify-content-between w-100">
+                <div className="nav-item cursor-pointer">
+                  <LinkedInIcon />
+                </div>
+                <div className="nav-item cursor-pointer">
+                  <GitHubIcon />
+                </div>
+                <div className="nav-item cursor-pointer">
+                  <InstagramIcon />
+                </div>
+                <div className="nav-item cursor-pointer">
+                  <TwitterIcon />
+                </div>
               </div>
             </Nav>
           </Navbar.Collapse>

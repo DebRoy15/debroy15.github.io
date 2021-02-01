@@ -65,10 +65,10 @@ const Projects = () => {
                       </h5>
                       <p className="color-white">{project.description}</p>
                       <div className="d-flex justify-content-between mr-4">
-                        <Button variant="contained" color="secondary">
+                        <Button variant="contained" color="primary">
                           Source Code
                         </Button>
-                        <Button variant="contained" color="secondary">
+                        <Button variant="contained" color="primary">
                           Live Demo
                         </Button>
                       </div>

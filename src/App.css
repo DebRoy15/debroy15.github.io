@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 img {
-  object-fit: contain !important;
+  object-fit: cover;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -62,4 +62,7 @@ h6 {
 .chonburi-font {
   font-family: "Abril Fatface", cursive !important;
   letter-spacing: 2px;
+}
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -30,32 +30,32 @@ const About = () => {
                 </p>
               </div>
               <div className="mt-5">
-                <div className="tabs mb-5">
-                  <div
+                <Row className="tabs mb-5">
+                  <Col
                     className={`
                       ${
                         tab === "experience"
-                          ? "active-tab mr-3"
+                          ? "active-tab custom-mr-3"
                           : "inactive-tab"
-                      }`}
+                      } tab`}
                     onClick={() => setTab("experience")}
                   >
                     <WorkIcon />
                     <h5>Experiences</h5>
-                  </div>
-                  <div
+                  </Col>
+                  <Col
                     className={`
                       ${
-                        tab === "education" ? "active-tab ml-3" : "inactive-tab"
-                      }`}
+                        tab === "education"
+                          ? "active-tab custom-ml-3"
+                          : "inactive-tab"
+                      } tab`}
                     onClick={() => setTab("education")}
                   >
                     <LocalLibraryIcon />
-                    <h5>
-                      Education &<br /> Certification
-                    </h5>
-                  </div>
-                </div>
+                    <h5>Educations</h5>
+                  </Col>
+                </Row>
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
