@@ -94,15 +94,76 @@
   margin-left: 1.5rem;
 }
 .active-tab {
-  background-color: #09c75ea4;
+  // background-color: #09c75ea4;
+  position: relative;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    border-radius: 10rem;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover::before {
+    filter: blur(5px);
+  }
+  &:hover::after {
+    filter: blur(15px);
+  }
+  &:hover {
+    animation: hue 2s linear infinite;
+  }
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 }
 .inactive-tab {
-  border: 1px solid #09c75e;
+  border: 1px solid #2f80ed;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #2f80ed;
+    border-radius: 10rem;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover::before {
+    filter: blur(5px);
+  }
+  &:hover::after {
+    filter: blur(15px);
+  }
+  &:hover {
+    animation: hue 2s linear infinite;
+  }
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 }
 .about-sub-data {
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #09c75e25;
+  background: linear-gradient(to right, #56cbf24b, #2f81ed4b);
   box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
@@ -150,12 +211,8 @@
 .project-card {
   position: relative;
   overflow: hidden;
-  background: rgb(9, 199, 60);
-  background: linear-gradient(
-    180deg,
-    rgba(9, 199, 60, 1) 22%,
-    rgba(18, 111, 57, 1) 79%
-  );
+  background: #2f81ed3f;
+  background: linear-gradient(to right, #56cbf23f, #2f81ed3f);
   box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
@@ -278,6 +335,41 @@
 
 .color-white {
   color: white;
+}
+
+.project-card-btn {
+  position: relative;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover::before {
+    filter: blur(5px);
+  }
+  &:hover::after {
+    filter: blur(15px);
+  }
+  &:hover {
+    animation: hue 2s linear infinite;
+  }
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 }
 
 @media (max-width: 768px) {
