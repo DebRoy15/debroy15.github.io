@@ -13,6 +13,23 @@
   background: linear-gradient(to right, #56ccf2, #2f80ed);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  animation: hue 2s linear infinite;
+
+  &::before {
+    filter: blur(5px);
+  }
+  &::after {
+    filter: blur(15px);
+  }
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 }
 .nav {
   font-size: 1rem;

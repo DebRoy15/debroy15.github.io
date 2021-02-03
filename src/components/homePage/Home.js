@@ -7,14 +7,14 @@ const Home = () => {
       <div className="bg-image">
         <div className="container home-page-intro">
           <Row className="home-row">
-            <Col md={6}>
+            <Col md={8} xs={12}>
               <div className="intro-section">
-                <h5>Welcome to my world</h5>
-                <h1>
-                  Hi, I'm <span className="chonburi-font green-text">Deb</span>{" "}
-                  Roy
+                <h5 className="mb-5">Welcome to my world</h5>
+                <h1 className="mb-4">
+                  Hi, I'm <span className="chonburi-font green-text">Deb</span>
+                  jyoti Roy
                 </h1>
-                <h2>
+                <h2 className="mb-4">
                   <span className="chonburi-font green-text">Software</span>{" "}
                   Developer
                 </h2>
