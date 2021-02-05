@@ -1,6 +1,9 @@
 import { Button } from "@material-ui/core";
+import { motion } from "framer-motion";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { scrollReveal } from "../../animation";
+import { useScroll } from "./useScroll";
 
 const myProjects = [
   {
@@ -41,9 +44,15 @@ const myProjects = [
 ];
 
 const Projects = () => {
+  const [element, controls] = useScroll();
   return (
     <div className="projects" id="projects">
-      <div className="container pt-5 pb-5">
+      <motion.div
+        variants={scrollReveal}
+        ref={element}
+        animate={controls}
+        className="container pt-6 pb-6"
+      >
         <div className="heading-section">
           <h1>
             <span className="chonburi-font green-text">Pro</span>jects
@@ -85,7 +94,7 @@ const Projects = () => {
             })}
           </Row>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

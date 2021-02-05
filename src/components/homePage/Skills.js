@@ -1,5 +1,8 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { scrollReveal } from "../../animation";
+import { useScroll } from "./useScroll";
 
 const skills = [
   {
@@ -53,9 +56,15 @@ const skills = [
 ];
 
 const Skills = () => {
+  const [element, controls] = useScroll();
   return (
     <div id="skills" className="skills-section">
-      <div className="container">
+      <motion.div
+        variants={scrollReveal}
+        ref={element}
+        animate={controls}
+        className="container"
+      >
         <div className="heading-section">
           <h1>
             <span className="chonburi-font green-text">Ski</span>lls
@@ -73,7 +82,7 @@ const Skills = () => {
             );
           })}
         </Row>
-      </div>
+      </motion.div>
     </div>
   );
 };

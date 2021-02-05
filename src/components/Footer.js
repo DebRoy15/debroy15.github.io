@@ -9,7 +9,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const Footer = () => {
   return (
-    <div className="footer pb-4 pt-4 ">
+    <div className="footer pb-5 pt-5 ">
       <div className="container">
         <Row className="justify-content-between align-items-center">
           <Col md={3} xs={12}>

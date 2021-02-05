@@ -4,6 +4,9 @@
 /* bold */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
+/* logo */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
 @import "./styles/reset.css";
 /* @import "../ReactParallaxTilt.scss"; */
 /* ==================================== */
@@ -63,10 +66,21 @@ h6 {
   letter-spacing: 2px;
 }
 
+.pt-6 {
+  padding-top: 6rem !important;
+}
+.pb-6 {
+  padding-bottom: 6rem !important;
+}
+
 .chonburi-font {
   font-family: "Abril Fatface", cursive !important;
   letter-spacing: 2px;
 }
 .cursor-pointer {
   cursor: pointer;
+}
+
+.App {
+  overflow: hidden;
 }

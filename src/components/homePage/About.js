@@ -4,15 +4,26 @@ import WorkIcon from "@material-ui/icons/Work";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 import SkillSvg from "../../images/about-shape.svg";
 
+import { scrollReveal } from "../../animation";
+import { useScroll } from "./useScroll";
+import { motion } from "framer-motion";
+
 const About = () => {
   const [tab, setTab] = useState("experience");
+  const [element, controls] = useScroll();
+
   return (
-    <div id="about" className="about pb-5">
+    <motion.div id="about" className="about pb-6 pt-6">
       <img className="skills-img" src={SkillSvg} alt="" />
 
-      <div className="container">
-        <Row>
-          <Col className="" md={5}>
+      <motion.div
+        variants={scrollReveal}
+        ref={element}
+        animate={controls}
+        className="container"
+      >
+        <Row className="">
+          <Col className="p-0 text-center" md={5}>
             <img className="about-img" src="/images/pro-pic.jpg" alt="" />
           </Col>
           <Col className="" md={7}>
@@ -66,7 +77,7 @@ const About = () => {
                           share and rental booking application.
                         </li>
                         <li>
-                          implemented secure authentication in the website.
+                          Implemented secure authentication in the website.
                         </li>
                         <li>
                           Implemented Google auto complete and Maps for search
@@ -104,8 +115,8 @@ const About = () => {
             </div>
           </Col>
         </Row>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
