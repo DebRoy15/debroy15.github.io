@@ -29,7 +29,6 @@ const Home = () => {
                   <span className="chonburi-font green-text">Software</span>{" "}
                   Developer
                 </motion.h2>
-                <motion.h3 variants={titleAnim}>Based in India</motion.h3>
               </motion.div>
             </Col>
           </Row>

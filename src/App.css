@@ -84,3 +84,20 @@ h6 {
 .App {
   overflow: hidden;
 }
+.navbar-toggler-icon {
+  filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+  -webkit-filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+  -moz-filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+}
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1704px !important;
+  }
+}

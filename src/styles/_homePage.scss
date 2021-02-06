@@ -8,8 +8,10 @@
   background-image: url("../images/wlc-bg1.jpg");
   // background-position: 50%;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  object-fit: cover;
   height: 100vh;
 }
 
@@ -53,6 +55,21 @@
   position: absolute;
   top: 0;
   z-index: 0;
+}
+.resume-section {
+  margin-top: 1rem;
+  h6 {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  a {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
 }
 
 .about-img {
@@ -168,9 +185,6 @@
   box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
-}
-.about-info-des {
-  margin-top: 2rem;
 }
 
 // -------------------------------------------------
@@ -344,6 +358,11 @@
 .project-card-btn {
   position: relative;
   background: linear-gradient(to right, #56ccf2, #2f80ed);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none !important;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -354,7 +373,7 @@
     top: 0;
     bottom: 0;
     background: linear-gradient(to right, #56ccf2, #2f80ed);
-    border-radius: 20px;
+    border-radius: 5px;
     transition: all 0.5s ease-in-out;
   }
   &:hover::before {
@@ -365,6 +384,7 @@
   }
   &:hover {
     animation: hue 2s linear infinite;
+    color: white;
   }
   @keyframes hue {
     0% {

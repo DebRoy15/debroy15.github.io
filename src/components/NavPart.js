@@ -9,14 +9,14 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const NavPart = () => {
   return (
     <div className="fixed ">
-      <div className="container">
+      <div className={window.innerWidth > 767 ? "px-5" : "px-2"}>
         <Navbar collapseOnSelect expand="lg">
           <Navbar.Brand href="/" className="logo">
             DR
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto nav-left-side">
+            <Nav className="mr-auto ml-4 nav-left-side">
               <Nav.Link href="#home" className="nav-item">
                 Home
               </Nav.Link>
@@ -35,20 +35,36 @@ const NavPart = () => {
                 Contact
               </Nav.Link>
             </Nav>
-            <Nav className="ml-auto w-25">
+            <Nav
+              className={`ml-auto ${
+                window.innerWidth > 767 ? "w-25" : "mt-5 w-100"
+              }`}
+            >
               <div className="d-flex justify-content-between w-100">
-                <div className="nav-item cursor-pointer">
+                <Nav.Link
+                  href="https://www.linkedin.com/in/deb-roy-97056415a/"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                >
                   <LinkedInIcon />
-                </div>
-                <div className="nav-item cursor-pointer">
+                </Nav.Link>
+                <Nav.Link
+                  href="https://github.com/DebRoy15"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                >
                   <GitHubIcon />
-                </div>
-                <div className="nav-item cursor-pointer">
+                </Nav.Link>
+                <Nav.Link
+                  href="https://www.instagram.com/coding_warrior/"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                >
                   <InstagramIcon />
-                </div>
-                <div className="nav-item cursor-pointer">
+                </Nav.Link>
+                {/* <Nav.Link href="#contact" className="nav-item cursor-pointer">
                   <TwitterIcon />
-                </div>
+                </Nav.Link> */}
               </div>
             </Nav>
           </Navbar.Collapse>

@@ -17,7 +17,7 @@ const About = () => {
       <img className="skills-img" src={SkillSvg} alt="" />
 
       <motion.div
-        variants={scrollReveal}
+        variants={window.innerWidth > 767 ? scrollReveal : null}
         ref={element}
         animate={controls}
         className="container"
@@ -28,20 +28,24 @@ const About = () => {
           </Col>
           <Col className="" md={7}>
             <div className="about-info">
-              <div className="about-info-des">
-                <h1>
-                  <span className="chonburi-font green-text">Abo</span>ut Me
-                </h1>
-                <p className="">
-                  Current Software Developer at start‑up company Turtleye tech.
-                  1+ years experience in the backend and frontend development
-                  and computersecurity. Interested in devising a better
-                  problem‑solving method for challenging tasks, and learning new
-                  technologies and tools if the need arises.
-                </p>
+              <h1 className="pb-4">
+                <span className="chonburi-font green-text ">Abo</span>ut Me
+              </h1>
+              <p className="">
+                Current Software Developer at start‑up company Turtleye tech. I
+                have experience in the backend and frontend development and
+                computer security. Interested in devising a better
+                problem‑solving method for challenging tasks, and learning new
+                technologies and tools if the need arises.
+              </p>
+              <div className="d-flex align-items-center resume-section ">
+                <h6>Resume :</h6>
+                <a href="/my-resume.pdf" target="_blank">
+                  View
+                </a>
               </div>
               <div className="mt-5">
-                <Row className="tabs mb-5">
+                <Row className="tabs mb-2">
                   <Col
                     className={`
                       ${

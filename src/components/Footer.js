@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/_footer.scss";
-import { Col, Row } from "react-bootstrap";
+import { Col, Nav, Row } from "react-bootstrap";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -14,10 +14,27 @@ const Footer = () => {
         <Row className="justify-content-between align-items-center">
           <Col md={3} xs={12}>
             <div className="d-flex justify-content-between footer-info mt-4">
-              <LinkedInIcon />
-              <GitHubIcon />
-              <TwitterIcon />
-              <InstagramIcon />
+              <Nav.Link
+                href="https://www.linkedin.com/in/deb-roy-97056415a/"
+                className="nav-item cursor-pointer"
+                target="_blank"
+              >
+                <LinkedInIcon />
+              </Nav.Link>
+              <Nav.Link
+                href="https://github.com/DebRoy15"
+                className="nav-item cursor-pointer"
+                target="_blank"
+              >
+                <GitHubIcon />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.instagram.com/coding_warrior/"
+                className="nav-item cursor-pointer"
+                target="_blank"
+              >
+                <InstagramIcon />
+              </Nav.Link>
             </div>
           </Col>
           <Col md={5} xs={12}>
@@ -42,11 +59,8 @@ const Footer = () => {
         </Row>
         <div className="text-center mt-4  footer-end">
           <p>
-            Made with{" "}
-            <span className="footer-love-icon">
-              <FavoriteIcon />
-            </span>{" "}
-            by <span className="chonburi-font green-text"> Debjyoti Roy</span>
+            Designed & Developed by{" "}
+            <span className="chonburi-font green-text"> Debjyoti Roy</span>
           </p>
         </div>
       </div>
