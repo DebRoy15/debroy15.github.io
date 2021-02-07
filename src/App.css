@@ -1,8 +1,8 @@
 /* normal */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 
 /* bold */
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
 /* logo */
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
@@ -12,7 +12,7 @@
 /* ==================================== */
 
 * {
-  font-family: "IBM Plex Serif", serif !important;
+  font-family: "Quicksand", sans-serif !important;
   letter-spacing: 0.5px;
 }
 html {
@@ -62,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Abril Fatface", cursive !important;
+  font-family: "Varela", sans-serif !important;
   letter-spacing: 2px;
 }
 
@@ -74,7 +74,7 @@ h6 {
 }
 
 .chonburi-font {
-  font-family: "Abril Fatface", cursive !important;
+  font-family: "Varela", sans-serif !important;
   letter-spacing: 2px;
 }
 .cursor-pointer {
