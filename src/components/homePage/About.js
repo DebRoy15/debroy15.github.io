@@ -32,9 +32,9 @@ const About = () => {
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
               <p className="">
-                Current Software Developer at start‑up company Turtleye tech. I
-                have experience in the backend and frontend development and
-                computer security. Interested in devising a better
+                Worked as a Software Developer at start‑up company Turtleye
+                tech. I have experience in the backend and frontend development
+                and computer security. Interested in devising a better
                 problem‑solving method for challenging tasks, and learning new
                 technologies and tools if the need arises.
               </p>
