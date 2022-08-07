@@ -74,24 +74,65 @@ const About = () => {
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
-                      <h5>Turtleye tech</h5>
-                      <ul>
-                        <li>
-                          Developed Front‑end of a website on React for car
-                          share and rental booking application.
-                        </li>
-                        <li>
-                          Implemented secure authentication in the website.
-                        </li>
-                        <li>
-                          Implemented Google auto complete and Maps for search
-                          car and rental in the website.
-                        </li>
-                      </ul>
+                      <div>
+                        <h5>Huron</h5>
+                        <ul>
+                          <li>
+                            Hands-on experience on multiple products. Develop
+                            various solutions for different problems on Web API,
+                            WCF services, etc. Implemented solution for Session
+                            Hijacking, script injection prevention, Hashing and
+                            salting data, etc.
+                          </li>
+                          <li>
+                            Developed code for uploading xlsx ﬁles then
+                            extraction, validation, and storing the data in the
+                            database. Hands-on Experience in LINQ, Entity
+                            Framework, and Report Server.
+                          </li>
+                          <li>
+                            Good exposure to Front-end development with Angular,
+                            Bootstrap, and JQuery in the project. Industry
+                            experience in version control systems Git and Azure
+                            DevOps and AWS services (Pinpoint, Lamda, SQS,
+                            Secret Manager, etc).
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5>Turtleye tech</h5>
+                        <ul>
+                          <li>
+                            Hands-on experience in the designing, and developing
+                            of the application with team members.
+                          </li>
+                          <li>
+                            Worked in Front-end development of the website with
+                            React Js for car share and rental booking
+                            applications.
+                          </li>
+                          <li>
+                            Experience in implementation of secure
+                            Authentication and Authorization on the website.
+                            Implemented Google autocomplete and Maps for
+                            searching cars and rentals on the website.
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   ) : null}
                   {tab === "education" ? (
                     <div className="education">
+                      <div>
+                        <h5>Crio.do</h5>
+                        <ul>
+                          <li className="text-justify">
+                            Worked on guided internship-grade projects in a real
+                            dev environment. Learned HTML, CSS, JavaScript,
+                            React, Node Js
+                          </li>
+                        </ul>
+                      </div>
                       <div>
                         <h5>Kodnest</h5>
                         <ul>

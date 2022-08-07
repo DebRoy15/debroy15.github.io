@@ -7,10 +7,18 @@ import { useScroll } from "./useScroll";
 
 const myProjects = [
   {
+    image: "/images/project-7.png",
+    title: "Socially Connect",
+    description:
+      " Socially Connect is a social media platform for hosting and attending events. This is a full-stack application where I have used React with Typescript and Mobx as Frontend and Dotnet core as the Backend. I have used Postgres SQL for the database.",
+    source: "https://github.com/DebRoy15/socialMediaApp",
+    demoLink: "https://sociallyconnect.herokuapp.com",
+  },
+  {
     image: "/images/project-2.png",
     title: "Amazon Clone",
     description:
-      " A simple e-commerce website built in react.js. Also, I have used stripe as a payment gateway.",
+      "It's an e-commerce website. I used React and Redux to build the front end. I have also added a payment gateway(Stripe). For saving Data in the database and authentication, I have used Firebase.",
     source: "https://github.com/DebRoy15/amazon-clone",
     demoLink: "https://amazon-clone05.netlify.app/",
   },
